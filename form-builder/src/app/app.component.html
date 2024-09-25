@@ -1,0 +1,41 @@
+<div class="header">
+  <div class="logo">
+    <h1>Awesome Form Builder</h1>
+    <p>Awesome Angular Form Builder</p>
+  </div>
+</div>
+
+<section class="feature-list">
+  <h2>Feature List</h2>
+  <div class="features">
+    <div class="feature" *ngFor="let feature of features">
+      <div class="feature-icon">
+        <i class="{{feature.icon}}"></i>
+      </div>
+      <div class="feature-text">
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="data-types">
+  <h2>Data Types</h2>
+  <div class="types">
+    <button class="data-type" *ngFor="let type of dataTypes">{{ type }}</button>
+  </div>
+</section>
+
+<section class="demos">
+  <h2>Demos</h2>
+  <div class="demo-list">
+    <div class="demo-card" *ngFor="let demo of demos">
+      <div class="demo-info">
+        <h3>{{ demo.title }}</h3>
+        <p>{{ demo.number }}</p>
+      </div>
+      <button class="demo-button">Demo</button>
+    </div>
+  </div>
+</section>
